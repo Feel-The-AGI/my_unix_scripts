@@ -1,0 +1,16 @@
+#!/bin/bash
+
+sudo systemctl status bluetooth
+sudo systemctl start bluetooth
+sudo systemctl enable bluetooth
+
+bluetoothctl
+# Inside bluetoothctl use the following commands
+# power on
+# agent on
+# default-agent
+# scan on
+# pair [DEVICE MAC]
+# trust [DEVICE MAC] (optional)
+# connect [DEVICE MAC]
+# exit
