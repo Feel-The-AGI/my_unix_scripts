@@ -1,11 +1,13 @@
 #!/bin/bash
 
+# Replace this with your actual personal access token
 ACCESS_TOKEN=""
-# GitHub username
+
+# Your GitHub username
 GITHUB_USERNAME="Feel-The-AGI"
 
 # Navigate to the directory containing all your repos
-cd /home/trainora/Desktop/repo || exit
+cd /home/trainora/Desktop/repo_transfer || exit
 
 # List of your repository names
 repos=(
@@ -16,10 +18,11 @@ repos=(
     "AIrticle"
     "semblance_halo"
     "Discord-bot-js"
-    "simple_shell"
+    "UNIX shell"
     "MoryaAI"
     "synthetic_data_generator"
     "MuraAI"
+    "my unix scripts"
 )
 
 for repo in "${repos[@]}"; do
@@ -53,7 +56,7 @@ for repo in "${repos[@]}"; do
         echo "${repo} created and pushed."
     fi
     # Go back to the repos directory before processing the next repository
-    cd /home/trainora/Desktop/repo
+    cd /home/trainora/Desktop/repo_transfer
 done
 
 echo "All repositories have been processed."
